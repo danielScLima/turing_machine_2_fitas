@@ -5,7 +5,9 @@ digraph G {
 struct1 [label=<<TABLE>
 <TR>
 <TD><FONT>0</FONT></TD>
+<TD><FONT>1</FONT></TD>
 <TD><FONT>#</FONT></TD>
+<TD><FONT>1</FONT></TD>
 <TD><FONT>0</FONT></TD>
 <TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
@@ -20,6 +22,8 @@ color=red;
 
 struct2 [label=<<TABLE>
 <TR>
+<TD><FONT>B</FONT></TD>
+<TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
