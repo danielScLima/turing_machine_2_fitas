@@ -32,7 +32,7 @@ TupleOfIdOfAcceptanceStateAndStructure TuringMachineSamples::get_structure_of_q7
             {}, //vetor chegando no 0
             {}, //vetor chegando no 1
             {Entry('X','X','X','X','S','L'),Entry('Y','Y','Y','Y','S','L')}, //vetor chegando no 2
-            {Entry('T','T','X','X','R','S'),Entry('V','V','Y','Y','R','S')}, //vetor chegando no 3
+            {Entry('#','T','#','X','R','S'),Entry('#','V','#','Y','R','S')}, //vetor chegando no 3
             {}, //vetor chegando no 4
         },
 
@@ -41,7 +41,7 @@ TupleOfIdOfAcceptanceStateAndStructure TuringMachineSamples::get_structure_of_q7
             {}, //vetor chegando no 0
             {}, //vetor chegando no 1
             {}, //vetor chegando no 2
-            {Entry('X','X','X','X','R','R'),Entry('Y','Y','Y','Y','R','R')}, //vetor chegando no 3
+            {Entry('0','X','X','X','R','R'),Entry('1','Y','Y','Y','R','R')}, //vetor chegando no 3
             {Entry('B','#','B','#','R','R')}, //vetor chegando no 4
         },
 

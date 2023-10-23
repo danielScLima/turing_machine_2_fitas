@@ -319,7 +319,33 @@ std::string TuringMachine::produce_content_of_draw_considering_input
 
     content += "</TR>\n";
     content += "</TABLE>>];\n";
-    content += "label = \"Word\";\n";
+    content += "label = \"Word 1\";\n";
+    content += "color=red;\n";
+    content += "}\n";
+
+    content += "\tsubgraph cluster_2 {\n";
+    content += "\t\tnode [shape=plaintext];\n";
+    content += "\n";
+    content += "struct2 [label=<<TABLE>\n";
+    content += "<TR>\n";
+
+    //word2
+    for(int index = 0; index < this->input2.size();++index)
+    {
+        //if (index == previous_input_symbol_index)
+        if (index == current_index_of_input2)
+        {
+            content += "<TD BGCOLOR=\"gray\"><FONT>"+getCharTransformedAsString(this->input2[index])+"</FONT></TD>\n";
+        }
+        else
+        {
+            content += "<TD><FONT>"+getCharTransformedAsString(this->input2[index])+"</FONT></TD>\n";
+        }
+    }
+
+    content += "</TR>\n";
+    content += "</TABLE>>];\n";
+    content += "label = \"Word 2\";\n";
     content += "color=red;\n";
     content += "}\n";
 

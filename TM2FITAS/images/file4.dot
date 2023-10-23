@@ -5,25 +5,41 @@ digraph G {
 struct1 [label=<<TABLE>
 <TR>
 <TD><FONT>T</FONT></TD>
-<TD BGCOLOR="gray"><FONT>#</FONT></TD>
-<TD><FONT>0</FONT></TD>
+<TD><FONT>#</FONT></TD>
+<TD BGCOLOR="gray"><FONT>0</FONT></TD>
 <TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
 </TR>
 </TABLE>>];
-label = "Word";
+label = "Word 1";
+color=red;
+}
+	subgraph cluster_2 {
+		node [shape=plaintext];
+
+struct2 [label=<<TABLE>
+<TR>
+<TD BGCOLOR="gray"><FONT>X</FONT></TD>
+<TD><FONT>#</FONT></TD>
+<TD><FONT>B</FONT></TD>
+<TD><FONT>B</FONT></TD>
+<TD><FONT>B</FONT></TD>
+<TD><FONT>B</FONT></TD>
+</TR>
+</TABLE>>];
+label = "Word 2";
 color=red;
 }
 	subgraph cluster_1 {
 		node [style=filled];
-		label = "Turing Machine: "
+		label = "Turing Machine: After to read # T"
 		color=blue;
 
 		q0;
 		q1;
-		q2 [color="lightblue"];
-		q3;
+		q2;
+		q3 [color="lightblue"];
 		q4 [shape="doublecircle"];
 		q0->q1[label="0,B -> T,T,R,R
 1,B -> V,V,R,R"];
@@ -32,10 +48,10 @@ color=red;
 		q1->q2[label="#,B -> #,#,P,L"];
 		q2->q2[label="X,X -> X,X,S,L
 Y,Y -> Y,Y,S,L"];
-		q2->q3[label="T,T -> X,X,R,S
-V,V -> Y,Y,R,S"];
-		q3->q3[label="X,X -> X,X,R,R
-Y,Y -> Y,Y,R,R"];
+		q2->q3[label="#,T -> #,X,R,S
+#,V -> #,Y,R,S"];
+		q3->q3[label="0,X -> X,X,R,R
+1,Y -> Y,Y,R,R"];
 		q3->q4[label="B,# -> B,#,R,R"];
 x [color=white, label=""];		x->q0	}
 

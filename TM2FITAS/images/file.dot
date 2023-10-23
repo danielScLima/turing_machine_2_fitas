@@ -16,10 +16,10 @@ digraph G {
 		q1->q2[label="#,B -> #,#,P,L"];
 		q2->q2[label="X,X -> X,X,S,L
 Y,Y -> Y,Y,S,L"];
-		q2->q3[label="T,T -> X,X,R,S
-V,V -> Y,Y,R,S"];
-		q3->q3[label="X,X -> X,X,R,R
-Y,Y -> Y,Y,R,R"];
+		q2->q3[label="#,T -> #,X,R,S
+#,V -> #,Y,R,S"];
+		q3->q3[label="0,X -> X,X,R,R
+1,Y -> Y,Y,R,R"];
 		q3->q4[label="B,# -> B,#,R,R"];
 x [color=white, label=""];		x->q0	}
 
