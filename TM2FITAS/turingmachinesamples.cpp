@@ -33,7 +33,7 @@ TupleOfIdOfAcceptanceStateAndStructure TuringMachineSamples::get_structure_of_q7
         {
             {}, //vetor chegando no 0
             {}, //vetor chegando no 1
-            {Entry('X','X','X','X','S','L'),Entry('Y','Y','Y','Y','S','L')}, //vetor chegando no 2
+            {Entry('#','X','#','X','S','L'),Entry('#','Y','#','Y','S','L')}, //vetor chegando no 2
             {Entry('#','T','#','X','R','S'),Entry('#','V','#','Y','R','S')}, //vetor chegando no 3
             {}, //vetor chegando no 4
             {}, //vetor chegando no 5

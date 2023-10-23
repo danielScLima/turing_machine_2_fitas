@@ -7,8 +7,8 @@ struct1 [label=<<TABLE>
 <TD><FONT>0</FONT></TD>
 <TD><FONT>1</FONT></TD>
 <TD><FONT>#</FONT></TD>
-<TD><FONT>0</FONT></TD>
 <TD><FONT>1</FONT></TD>
+<TD><FONT>0</FONT></TD>
 <TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
@@ -52,8 +52,8 @@ color=red;
 		q1->q1[label="0,B -> X,X,R,R
 1,B -> Y,Y,R,R"];
 		q1->q2[label="#,B -> #,#,P,L"];
-		q2->q2[label="X,X -> X,X,S,L
-Y,Y -> Y,Y,S,L"];
+		q2->q2[label="#,X -> #,X,S,L
+#,Y -> #,Y,S,L"];
 		q2->q3[label="#,T -> #,X,R,S
 #,V -> #,Y,R,S"];
 		q3->q3[label="0,X -> X,X,R,R

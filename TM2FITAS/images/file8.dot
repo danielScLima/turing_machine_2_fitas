@@ -4,12 +4,12 @@ digraph G {
 
 struct1 [label=<<TABLE>
 <TR>
-<TD><FONT>T</FONT></TD>
+<TD><FONT>V</FONT></TD>
+<TD><FONT>X</FONT></TD>
+<TD><FONT>#</FONT></TD>
 <TD><FONT>Y</FONT></TD>
-<TD BGCOLOR="gray"><FONT>#</FONT></TD>
-<TD><FONT>1</FONT></TD>
-<TD><FONT>0</FONT></TD>
-<TD><FONT>B</FONT></TD>
+<TD><FONT>X</FONT></TD>
+<TD BGCOLOR="gray"><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
 </TR>
@@ -22,9 +22,9 @@ color=red;
 
 struct2 [label=<<TABLE>
 <TR>
-<TD BGCOLOR="gray"><FONT>T</FONT></TD>
 <TD><FONT>Y</FONT></TD>
-<TD><FONT>#</FONT></TD>
+<TD><FONT>X</FONT></TD>
+<TD BGCOLOR="gray"><FONT>#</FONT></TD>
 <TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
 <TD><FONT>B</FONT></TD>
@@ -37,13 +37,13 @@ color=red;
 }
 	subgraph cluster_1 {
 		node [style=filled];
-		label = "Turing Machine: After to read # Y"
+		label = "Turing Machine: After to read 0 X"
 		color=blue;
 
 		q0;
 		q1;
-		q2 [color="lightblue"];
-		q3;
+		q2;
+		q3 [color="lightblue"];
 		q4 [shape="doublecircle"];
 		q5;
 		q0->q1[label="0,B -> T,T,R,R
