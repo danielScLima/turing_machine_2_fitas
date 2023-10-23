@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
     //tm.is_this_input_string_in_the_language_with_message("#BBB", true);   //Ex3: This must be accepted
     //tm.is_this_input_string_in_the_language_with_message("01#01BBB", true);   //Ex4: This must be accepted
     //tm.is_this_input_string_in_the_language_with_message("10#10BBB", true);   //Ex5: This must be accepted
-
     //tm.is_this_input_string_in_the_language_with_message("0#1BBB", true);   //Ex6: This must NOT be accepted
     //tm.is_this_input_string_in_the_language_with_message("1#0BBB", true);   //Ex7: This must NOT be accepted
     tm.is_this_input_string_in_the_language_with_message("01#10BBB", true);   //Ex8: This must NOT be accepted
