@@ -1,0 +1,26 @@
+digraph G {
+	subgraph cluster_1 {
+		node [style=filled];
+		label = "Turing Machine: Question7"
+		color=blue;
+
+		q0;
+		q1;
+		q2;
+		q3;
+		q4 [shape="doublecircle"];
+		q0->q1[label="0,B -> T,T,R,R
+1,B -> V,V,R,R"];
+		q1->q1[label="0,B -> X,X,R,R
+1,B -> Y,Y,R,R"];
+		q1->q2[label="#,B -> #,#,P,L"];
+		q2->q2[label="X,X -> X,X,S,L
+Y,Y -> Y,Y,S,L"];
+		q2->q3[label="T,T -> X,X,R,S
+V,V -> Y,Y,R,S"];
+		q3->q3[label="X,X -> X,X,R,R
+Y,Y -> Y,Y,R,R"];
+		q3->q4[label="B,# -> B,#,R,R"];
+x [color=white, label=""];		x->q0	}
+
+}
